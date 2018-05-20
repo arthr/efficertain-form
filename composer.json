@@ -1,0 +1,16 @@
+{
+    "name": "arthr/fastform",
+    "description": "Lender Profile Form - Efficertain",
+    "authors": [{
+        "name": "Arthur Morais",
+        "email": "arthrmrs@gmail.com"
+    }],
+    "autoload": {
+        "psr-4": {
+            "Efficertain\\": "efficertain/"
+        }
+    },
+    "require": {
+        "illuminate/database": "^5.6"
+    }
+}

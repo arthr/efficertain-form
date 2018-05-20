@@ -1,0 +1,109 @@
+body {
+    padding: 30px 0 0 0;
+    height: 100%;
+}
+
+fieldset {
+    border-width: 1px;
+    border-color: #9e9e9e;
+    border-style: solid;
+}
+
+fieldset:not(:first-child) {
+    margin-top: 30px;
+}
+
+legend {
+    padding: 0 15px;
+    font-size: 20px;
+    color: #3c78b4;
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+    color: #3c78b4;
+    font-size: 60px;
+    font-weight: 100;
+}
+
+/* label focus color */
+
+.input-field input:focus+label {
+    color: #3c78b4 !important;
+}
+
+/* label underline focus color */
+
+.row .input-field input:focus {
+    border-bottom: 1px solid #3c78b4 !important;
+    box-shadow: 0 1px 0 0 #3c78b4 !important;
+}
+
+/* form controls (buttons) */
+
+.form-buttons {
+    padding: 15px 0;
+}
+
+/* loading div */
+
+.loading {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 999;
+}
+
+.loading span {
+    top: 50%;
+    left: 50%;
+    margin-top: 40px;
+    margin-left: -90px;
+    display: block;
+    position: fixed;
+    color: #ccc;
+}
+
+.loading-wheel {
+    width: 20px;
+    height: 20px;
+    margin-top: -40px;
+    margin-left: -40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-width: 30px;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    -webkit-animation: spin 1s linear infinite;
+}
+
+.style-2 .loading-wheel {
+    border-style: double;
+    border-color: #ccc transparent;
+}
+
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0);
+    }
+    100% {
+        -webkit-transform: rotate(-360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0);
+    }
+    100% {
+        -webkit-transform: rotate(-360deg);
+    }
+}
